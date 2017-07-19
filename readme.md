@@ -10,6 +10,7 @@ Este site foi criado utilizando HTML5, CSS3, SASS e jQuery.
 
 ```
 $npm install
+$gulp
 ```
 
 ## Autores
