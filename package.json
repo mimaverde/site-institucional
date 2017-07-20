@@ -11,9 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-csslint": "^0.2.0",
     "gulp-cssmin": "^0.2.0",
@@ -21,10 +21,18 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-jshint": "^1.11.2",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-usemin": "^0.3.28",
-    "jshint-stylish": "^2.0.1"
+    "jshint-stylish": "^2.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-mask-plugin": "^1.14.11",
+    "jquery-validation": "^1.16.0",
+    "npm-modernizr": "^2.8.3"
   }
 }

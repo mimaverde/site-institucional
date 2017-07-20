@@ -9,6 +9,7 @@ bower_components
 
 #GENERAL
 .DS_Store
+.css
 
 ### Git ###
 *.orig
