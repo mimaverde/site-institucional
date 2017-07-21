@@ -52,13 +52,14 @@ gulp.task('bs-reload', function () {
 //Percorre todas as funções
 gulp.task('default', ['browser-sync', 'browserify'], function(){
 	//Inicia as funções
-	gulp.start('html', 'images', 'styles', 'scripts', 'lib');
+	gulp.start('html', 'images', 'styles', 'scripts', 'lib', 'vendors');
 
 	//Verifica alterações no site
   gulp.watch('src/styles/**/*.scss', ['styles']);
   gulp.watch('src/scripts/**/*.js', ['scripts']);
   gulp.watch('src/images/**/*', ['images']);
   gulp.watch('src/**/*.html', ['html']);
+  gulp.watch('src/vendors/**/*', ['vendors']);
   gulp.watch('*.html', ['bs-reload']);
 })
 
@@ -88,6 +89,7 @@ gulp.task('styles', function(){
         this.emit('end');
     }}))
     .pipe(sass())
+    .pipe(concat('style.css'))
     .pipe(gulp.dest('src/styles/'))
     .pipe(postcss([autoprefixer()]))
     .pipe(cssmin())
@@ -114,6 +116,11 @@ gulp.task('scripts', function(){
 gulp.task('lib', function(){
   gulp.src('src/scripts/libs/script.js')
     .pipe(gulp.dest('dist/scripts/libs/'));
+})
+
+gulp.task('vendors', function(){
+  gulp.src('src/vendors/**/*')
+    .pipe(gulp.dest('dist/vendors/'));
 })
 
 //Plugins no NPM
