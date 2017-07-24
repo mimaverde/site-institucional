@@ -420,6 +420,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background: url("../images/background.jpg") no-repeat bottom center #474b56; }
+
 body, p {
   font-family: 'latoregular';
   font-weight: normal;
@@ -613,84 +616,356 @@ body, p {
   .what .img-1 {
     display: block; } }
 
-.how, .volume, .processo {
+.how, .volume, .processo, .qualification {
   background: url("../images/bg-red.jpg") no-repeat top center;
   background-size: cover;
   height: 100vh; }
-  .how .part, .how .part:last-child, .volume .part, .volume .part:last-child, .processo .part, .processo .part:last-child {
+  .how .part, .how .part:last-child, .volume .part, .volume .part:last-child, .processo .part, .processo .part:last-child, .qualification .part, .qualification .part:last-child {
     background: none; }
-    .how .part .content, .how .part:last-child .content, .volume .part .content, .volume .part:last-child .content, .processo .part .content, .processo .part:last-child .content {
+    .how .part .content, .how .part:last-child .content, .volume .part .content, .volume .part:last-child .content, .processo .part .content, .processo .part:last-child .content, .qualification .part .content, .qualification .part:last-child .content {
       top: 75vh; }
-  .how ul, .volume ul, .processo ul {
+  .how ul, .volume ul, .processo ul, .qualification ul {
     list-style: none; }
-    .how ul li, .volume ul li, .processo ul li {
+    .how ul li, .volume ul li, .processo ul li, .qualification ul li {
       width: 100%;
       padding-bottom: 40px; }
-      .how ul li::before, .volume ul li::before, .processo ul li::before {
+      .how ul li::before, .volume ul li::before, .processo ul li::before, .qualification ul li::before {
         content: '';
         width: 70px;
         height: 69px;
         background: url("../images/icons.png") no-repeat;
         position: absolute; }
-      .how ul li:nth-child(1)::before, .volume ul li:nth-child(1)::before, .processo ul li:nth-child(1)::before {
+      .how ul li:nth-child(1)::before, .volume ul li:nth-child(1)::before, .processo ul li:nth-child(1)::before, .qualification ul li:nth-child(1)::before {
         height: 62px;
         background-position: -71px -84px; }
-      .how ul li:nth-child(2)::before, .volume ul li:nth-child(2)::before, .processo ul li:nth-child(2)::before {
+      .how ul li:nth-child(2)::before, .volume ul li:nth-child(2)::before, .processo ul li:nth-child(2)::before, .qualification ul li:nth-child(2)::before {
         background-position: 1px -154px; }
-      .how ul li:nth-child(3)::before, .volume ul li:nth-child(3)::before, .processo ul li:nth-child(3)::before {
+      .how ul li:nth-child(3)::before, .volume ul li:nth-child(3)::before, .processo ul li:nth-child(3)::before, .qualification ul li:nth-child(3)::before {
         background-position: -68px -151px; }
 
 @media screen and (min-width: 726px) {
-  .how ul, .volume ul, .processo ul {
+  .how ul, .volume ul {
     display: flex; }
-    .how ul li, .volume ul li, .processo ul li {
+    .how ul li, .volume ul li {
       width: 33%; } }
 
-.volume, .processo {
+.volume, .processo, .qualification {
   height: 140vh;
   background: url("../images/bg-dark.jpg") no-repeat top center;
   background-size: cover; }
-  .volume .part .content, .volume .part:last-child .content, .processo .part .content, .processo .part:last-child .content {
+  .volume .part .content, .volume .part:last-child .content, .processo .part .content, .processo .part:last-child .content, .qualification .part .content, .qualification .part:last-child .content {
     top: 70vh; }
-    .volume .part .content h2, .volume .part:last-child .content h2, .processo .part .content h2, .processo .part:last-child .content h2 {
+    .volume .part .content h2, .volume .part:last-child .content h2, .processo .part .content h2, .processo .part:last-child .content h2, .qualification .part .content h2, .qualification .part:last-child .content h2 {
       color: #70bf41; }
-      .volume .part .content h2 span, .volume .part:last-child .content h2 span, .processo .part .content h2 span, .processo .part:last-child .content h2 span {
+      .volume .part .content h2 span, .volume .part:last-child .content h2 span, .processo .part .content h2 span, .processo .part:last-child .content h2 span, .qualification .part .content h2 span, .qualification .part:last-child .content h2 span {
         font-size: 40px;
         display: block;
-        color: #FFFFFF; }
-    .volume .part .content ul, .volume .part:last-child .content ul, .processo .part .content ul, .processo .part:last-child .content ul {
+        color: #b9babd; }
+    .volume .part .content ul, .volume .part:last-child .content ul, .processo .part .content ul, .processo .part:last-child .content ul, .qualification .part .content ul, .qualification .part:last-child .content ul {
       margin: 0;
       padding: 0; }
-      .volume .part .content ul li, .volume .part:last-child .content ul li, .processo .part .content ul li, .processo .part:last-child .content ul li {
+      .volume .part .content ul li, .volume .part:last-child .content ul li, .processo .part .content ul li, .processo .part:last-child .content ul li, .qualification .part .content ul li, .qualification .part:last-child .content ul li {
         text-align: center; }
-        .volume .part .content ul li::before, .volume .part:last-child .content ul li::before, .processo .part .content ul li::before, .processo .part:last-child .content ul li::before {
+        .volume .part .content ul li::before, .volume .part:last-child .content ul li::before, .processo .part .content ul li::before, .processo .part:last-child .content ul li::before, .qualification .part .content ul li::before, .qualification .part:last-child .content ul li::before {
           display: none; }
-        .volume .part .content ul li h3, .volume .part:last-child .content ul li h3, .processo .part .content ul li h3, .processo .part:last-child .content ul li h3 {
+        .volume .part .content ul li h3, .volume .part:last-child .content ul li h3, .processo .part .content ul li h3, .processo .part:last-child .content ul li h3, .qualification .part .content ul li h3, .qualification .part:last-child .content ul li h3 {
           color: #aaaaac;
           padding: 0 10px; }
-        .volume .part .content ul li img, .volume .part:last-child .content ul li img, .processo .part .content ul li img, .processo .part:last-child .content ul li img {
+        .volume .part .content ul li img, .volume .part:last-child .content ul li img, .processo .part .content ul li img, .processo .part:last-child .content ul li img, .qualification .part .content ul li img, .qualification .part:last-child .content ul li img {
           width: 30%; }
 
 @media screen and (min-width: 726px) {
-  .volume, .processo {
+  .volume, .processo, .qualification {
     height: 100vh; }
-    .volume .part .content, .volume .part:last-child .content, .processo .part .content, .processo .part:last-child .content {
+    .volume .part .content, .volume .part:last-child .content, .processo .part .content, .processo .part:last-child .content, .qualification .part .content, .qualification .part:last-child .content {
       top: 50vh; }
-      .volume .part .content h2 span, .volume .part:last-child .content h2 span, .processo .part .content h2 span, .processo .part:last-child .content h2 span {
+      .volume .part .content h2 span, .volume .part:last-child .content h2 span, .processo .part .content h2 span, .processo .part:last-child .content h2 span, .qualification .part .content h2 span, .qualification .part:last-child .content h2 span {
         font-size: 80px; }
-      .volume .part .content ul li img, .volume .part:last-child .content ul li img, .processo .part .content ul li img, .processo .part:last-child .content ul li img {
+      .volume .part .content ul li img, .volume .part:last-child .content ul li img, .processo .part .content ul li img, .processo .part:last-child .content ul li img, .qualification .part .content ul li img, .qualification .part:last-child .content ul li img {
         width: 50%; } }
 
-.processo {
-  height: 110vh; }
-  .processo ul li {
-    width: 92%;
-    border: 5px solid #FFF;
-    margin: 30px 10px;
-    padding: 30px;
-    box-sizing: border-box; }
-  .processo .part p, .processo .part:last-child p {
+.processo, .qualification {
+  height: 150vh;
+  background: url("../images/bg-process.jpg") no-repeat top center;
+  background-size: cover; }
+  .processo .part p, .processo .part:last-child p, .qualification .part p, .qualification .part:last-child p {
     padding: 0;
     font-size: 18px; }
-  .processo .part .content, .processo .part:last-child .content {
-    top: 55vh; }
+  .processo .part .content, .processo .part:last-child .content, .qualification .part .content, .qualification .part:last-child .content {
+    top: 75vh; }
+    .processo .part .content ul li, .processo .part:last-child .content ul li, .qualification .part .content ul li, .qualification .part:last-child .content ul li {
+      width: 92%;
+      border: 5px solid #FFF;
+      margin: 30px 10px;
+      padding: 3%;
+      box-sizing: border-box; }
+      .processo .part .content ul li h3, .processo .part:last-child .content ul li h3, .qualification .part .content ul li h3, .qualification .part:last-child .content ul li h3 {
+        color: #70bf41;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center; }
+        .processo .part .content ul li h3::before, .processo .part:last-child .content ul li h3::before, .qualification .part .content ul li h3::before, .qualification .part:last-child .content ul li h3::before {
+          content: '';
+          width: 53px;
+          height: 49px;
+          display: inline-block;
+          margin-right: 10px;
+          background: url("../images/icons.png") no-repeat; }
+      .processo .part .content ul li:nth-child(1) h3::before, .processo .part:last-child .content ul li:nth-child(1) h3::before, .qualification .part .content ul li:nth-child(1) h3::before, .qualification .part:last-child .content ul li:nth-child(1) h3::before {
+        background-position: -150px 0px; }
+      .processo .part .content ul li:nth-child(2) h3::before, .processo .part:last-child .content ul li:nth-child(2) h3::before, .qualification .part .content ul li:nth-child(2) h3::before, .qualification .part:last-child .content ul li:nth-child(2) h3::before {
+        background-position: -150px -50px; }
+      .processo .part .content ul li:nth-child(3) h3::before, .processo .part:last-child .content ul li:nth-child(3) h3::before, .qualification .part .content ul li:nth-child(3) h3::before, .qualification .part:last-child .content ul li:nth-child(3) h3::before {
+        background-position: -150px -98px; }
+
+@media screen and (min-width: 840px) {
+  .processo ul {
+    display: flex; }
+    .processo ul li {
+      width: 33%; } }
+
+.qualification {
+  background: url("../images/bg-boy.jpg") no-repeat top center;
+  background-size: cover; }
+  .qualification .part .content h2, .qualification .part:last-child .content h2 {
+    float: right;
+    width: 190px; }
+  .qualification .part .content ul li, .qualification .part:last-child .content ul li {
+    padding: 30px;
+    clear: both;
+    margin-left: auto; }
+    .qualification .part .content ul li p, .qualification .part:last-child .content ul li p {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: inherit; }
+    .qualification .part .content ul li h3, .qualification .part:last-child .content ul li h3 {
+      color: #FFFFFF; }
+    .qualification .part .content ul li:nth-child(1) h3::before, .qualification .part:last-child .content ul li:nth-child(1) h3::before {
+      background-position: -150px -154px; }
+    .qualification .part .content ul li:nth-child(2) h3::before, .qualification .part:last-child .content ul li:nth-child(2) h3::before {
+      background-position: -150px -207px; }
+  .qualification .logos {
+    position: absolute;
+    bottom: 0;
+    max-width: 990px;
+    margin: 30px; }
+
+@media screen and (min-width: 1024px) {
+  .qualification .part .content h2, .qualification .part:last-child .content h2 {
+    float: left;
+    width: 440px; }
+  .qualification .part .content ul, .qualification .part:last-child .content ul {
+    float: right;
+    width: 40%; } }
+
+@media screen and (max-width: 600px) {
+  .qualification .logos img {
+    width: 90%; } }
+
+.exemplos {
+  height: auto;
+  background: #2b2e34;
+  padding-bottom: 150px; }
+  .exemplos h2 {
+    font-size: 50px;
+    color: #70bf41;
+    padding: 100px 0 50px;
+    text-align: center; }
+  .exemplos h3 {
+    font-size: 40px;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center; }
+
+.video-box .box-video {
+  background-color: #2b2e34;
+  margin: 0 auto;
+  padding: 25px 0 0 0; }
+  .video-box .box-video .video-elements {
+    width: 95%;
+    max-width: 970px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto; }
+    .video-box .box-video .video-elements .video, .video-box .box-video .video-elements video {
+      width: 100%;
+      height: auto; }
+
+.video-box svg:not(:root) {
+  overflow: hidden; }
+
+.video-box .video-overlay-play-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px calc(50% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.55;
+  cursor: pointer;
+  background: #2b2e34; }
+
+@media screen and (min-width: 726px) {
+  .exemplos h2 {
+    font-size: 100px; }
+  .exemplos h3 {
+    font-size: 80px; } }
+
+.prices {
+  height: auto;
+  width: 100%;
+  padding-bottom: 50px;
+  background: url("../images/bg-letter.jpg") no-repeat bottom center #474b56;
+  background-size: 100%; }
+  .prices .content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 970px; }
+    .prices .content h2 {
+      text-align: center;
+      font-size: 80px;
+      border: 6px solid #cb1f36;
+      padding: 25px;
+      width: 50%;
+      margin: 50px auto;
+      color: #fff; }
+    .prices .content h3 {
+      font-size: 60px; }
+    .prices .content > ul {
+      list-style: none;
+      text-transform: uppercase;
+      padding: 0; }
+      .prices .content > ul > li {
+        font-family: 'bebas_neueregular';
+        border: 6px solid #cb1f36;
+        margin: 2%;
+        padding: 20px;
+        color: #FFFFFF; }
+        .prices .content > ul > li p {
+          font-family: 'bebas_neueregular';
+          margin: 0; }
+        .prices .content > ul > li .text {
+          font-family: 'latoregular';
+          font-size: 12px;
+          line-height: 18px; }
+      .prices .content > ul ul {
+        margin: 25px 0; }
+  .prices .price {
+    font-size: 40px; }
+    .prices .price span {
+      font-size: 30px; }
+  .prices .sec .price {
+    font-size: 35px;
+    margin-bottom: 15px; }
+
+@media screen and (min-width: 1024px) {
+  .prices .content h2 {
+    font-size: 100px; }
+  .prices .content h3 {
+    font-size: 80px; } }
+
+@media screen and (min-width: 840px) {
+  .prices .content > ul {
+    display: flex; }
+    .prices .content > ul > li {
+      width: 50%; } }
+
+.vantagens {
+  height: auto; }
+  .vantagens h2 {
+    font-size: 50px;
+    color: #FFFFFF;
+    padding: 100px 0 50px;
+    text-align: center; }
+
+.end .signal img {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50vh;
+  left: 50vw; }
+
+@media screen and (max-width: 600px) {
+  .end .signal img {
+    width: 70%; } }
+
+footer {
+  width: 100%;
+  padding: 30px 0 10px;
+  background-color: rgba(0, 0, 0, 0.6); }
+  footer .content {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #FFFFFF;
+    text-align: center; }
+  footer .title {
+    color: #2ecc71;
+    margin-bottom: 10px; }
+  footer .end, footer .rights {
+    font-family: 'latoregular';
+    font-size: 12px;
+    color: #cccccc; }
+  footer .phone, footer .email {
+    font-family: 'bebas_neueregular';
+    font-size: 14px;
+    display: flex;
+    margin: 0 auto 10px;
+    width: 150px;
+    color: #FFFFFF;
+    text-decoration: none;
+    align-items: center; }
+    footer .phone::before, footer .email::before {
+      content: '';
+      width: 22px;
+      height: 18px;
+      margin-right: 10px;
+      background: url("../images/icons.png") no-repeat; }
+  footer .phone::before {
+    background-position: -60px 0; }
+  footer .email::before {
+    background-position: -93px 0; }
+  footer input[type="text"] {
+    font-family: 'bebas_neueregular';
+    color: #ccc;
+    overflow: visible;
+    background: transparent;
+    border: 1px solid #4a4c50;
+    padding: 5px;
+    font-size: 18px;
+    width: 271px;
+    margin-bottom: 5px; }
+  footer input[type="submit"] {
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-left: -30px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: url("../images/icons.png") no-repeat;
+    background-position: -36px 0; }
+  footer .info {
+    border-top: 1px solid #38393e;
+    margin: 10px 0;
+    padding: 10px 0; }
+  footer .logo {
+    width: 100px;
+    margin: 0 auto 10px; }
+    footer .logo img {
+      width: 100%; }
+
+.vantagens {
+  height: 50vh; }
+
+@media screen and (min-width: 726px) {
+  footer .logo {
+    margin: 0 30% 0 0; }
+  footer .content {
+    text-align: left; }
+  footer .address {
+    width: 80%; }
+  footer .info, footer .box, footer .contact {
+    display: flex; }
+  footer input[type="text"] {
+    font-size: 22px; } }
