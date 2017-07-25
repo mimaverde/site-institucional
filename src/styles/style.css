@@ -813,17 +813,17 @@ body, p {
   .exemplos h3 {
     font-size: 80px; } }
 
-.prices {
+.prices, .vantagens {
   height: auto;
   width: 100%;
   padding-bottom: 50px;
   background: url("../images/bg-letter.jpg") no-repeat bottom center #474b56;
   background-size: 100%; }
-  .prices .content {
+  .prices .content, .vantagens .content {
     margin: 0 auto;
     width: 100%;
     max-width: 970px; }
-    .prices .content h2 {
+    .prices .content h2, .vantagens .content h2 {
       text-align: center;
       font-size: 80px;
       border: 6px solid #cb1f36;
@@ -831,54 +831,81 @@ body, p {
       width: 50%;
       margin: 50px auto;
       color: #fff; }
-    .prices .content h3 {
+    .prices .content h3, .vantagens .content h3 {
       font-size: 60px; }
-    .prices .content > ul {
+    .prices .content > ul, .vantagens .content > ul {
       list-style: none;
       text-transform: uppercase;
       padding: 0; }
-      .prices .content > ul > li {
+      .prices .content > ul > li, .vantagens .content > ul > li {
         font-family: 'bebas_neueregular';
         border: 6px solid #cb1f36;
         margin: 2%;
         padding: 20px;
         color: #FFFFFF; }
-        .prices .content > ul > li p {
+        .prices .content > ul > li p, .vantagens .content > ul > li p {
           font-family: 'bebas_neueregular';
           margin: 0; }
-        .prices .content > ul > li .text {
+        .prices .content > ul > li .text, .vantagens .content > ul > li .text {
           font-family: 'latoregular';
           font-size: 12px;
           line-height: 18px; }
-      .prices .content > ul ul {
+      .prices .content > ul ul, .vantagens .content > ul ul {
         margin: 25px 0; }
-  .prices .price {
+  .prices .price, .vantagens .price {
     font-size: 40px; }
-    .prices .price span {
+    .prices .price span, .vantagens .price span {
       font-size: 30px; }
-  .prices .sec .price {
+  .prices .sec .price, .vantagens .sec .price {
     font-size: 35px;
     margin-bottom: 15px; }
 
 @media screen and (min-width: 1024px) {
-  .prices .content h2 {
+  .prices .content h2, .vantagens .content h2 {
     font-size: 100px; }
-  .prices .content h3 {
+  .prices .content h3, .vantagens .content h3 {
     font-size: 80px; } }
 
 @media screen and (min-width: 840px) {
-  .prices .content > ul {
+  .prices .content > ul, .vantagens .content > ul {
     display: flex; }
-    .prices .content > ul > li {
+    .prices .content > ul > li, .vantagens .content > ul > li {
       width: 50%; } }
 
 .vantagens {
-  height: auto; }
+  background: #333333;
+  height: 100vh;
+  padding-top: 50px; }
   .vantagens h2 {
-    font-size: 50px;
-    color: #FFFFFF;
-    padding: 100px 0 50px;
+    text-align: center;
+    font-size: 80px;
+    border: 6px solid #cb1f36;
+    padding: 25px;
+    width: 50%;
+    margin: 0 auto 50px;
+    color: #fff; }
+  .vantagens .content ul li {
+    border: none;
     text-align: center; }
+    .vantagens .content ul li h3 {
+      font-size: 25px;
+      letter-spacing: 1px; }
+    .vantagens .content ul li i {
+      width: 90px;
+      height: 92px;
+      display: block;
+      background: url(../images/icons.png) no-repeat;
+      margin: 0 auto 40px; }
+  .vantagens .content ul li:nth-child(1) i {
+    background-position: 0px -224px; }
+  .vantagens .content ul li:nth-child(2) i {
+    background-position: 0px -315px; }
+  .vantagens .content ul li:nth-child(3) i {
+    background-position: 0px -402px; }
+
+@media screen and (min-width: 840px) {
+  .vantagens h2 {
+    font-size: 80px; } }
 
 .end .signal img {
   transform: translate(-50%, -50%);
@@ -954,9 +981,6 @@ footer {
     margin: 0 auto 10px; }
     footer .logo img {
       width: 100%; }
-
-.vantagens {
-  height: 50vh; }
 
 @media screen and (min-width: 726px) {
   footer .logo {

@@ -709,7 +709,7 @@ body, p {
 	}
 }
 
-.prices {
+.prices, .vantagens {
 	height: auto;
 	width: 100%;
 	padding-bottom: 50px;
@@ -782,7 +782,7 @@ body, p {
 }
 
 @media screen and (min-width: 1024px){
-	.prices {
+	.prices, .vantagens {
 		.content {
 			h2 {
 				font-size: 100px;
@@ -796,7 +796,7 @@ body, p {
 }
 
 @media screen and (min-width: 840px) {
-	.prices {
+	.prices, .vantagens {
 		.content {
 			>ul {
 				display: flex;
@@ -810,13 +810,64 @@ body, p {
 }
 
 .vantagens {
-	height: auto;
+	background: #333333;
+	height: 100vh;
+	padding-top: 50px;
 
 	h2 {
-		font-size: 50px;
-		color: $white;
-		padding: 100px 0 50px;
 		text-align: center;
+		font-size: 80px;
+		border: 6px solid #cb1f36;
+		padding: 25px;
+		width: 50%;
+		margin: 0 auto 50px;
+		color: #fff;
+	}
+
+	.content {
+		ul {
+			li {
+				border: none;
+				text-align: center;
+
+				h3 {
+					font-size: 25px;
+					letter-spacing: 1px;
+				}
+
+				i {
+					width: 90px;
+					height: 92px;
+					display: block;
+					background: url(../images/icons.png) no-repeat;
+					margin: 0 auto 40px;
+				}
+			}
+
+			li:nth-child(1) {
+				i {
+					background-position: 0px -224px;
+				}
+			}
+			li:nth-child(2) {
+				i {
+					background-position: 0px -315px;
+				}
+			}
+			li:nth-child(3) {
+				i {
+					background-position: 0px -402px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 840px) {
+	.vantagens {
+		h2 {
+			font-size: 80px;
+		}
 	}
 }
 
@@ -933,10 +984,6 @@ footer {
 			width: 100%;
 		}
 	}
-}
-
-.vantagens {
-	height: 50vh;
 }
 
 @media screen and (min-width: 726px) {
